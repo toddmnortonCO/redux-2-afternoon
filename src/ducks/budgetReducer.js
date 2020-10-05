@@ -15,7 +15,7 @@ const REMOVE_PURCHASE = 'REMOVE_PURCHASE';
 export const requestBudgetData = () => {
   let data = axios.get("/api/budget-data").then((res) => res.data);
   return {
-    type: REQUEST_USER_DATA,
+    type: REQUEST_BUDGET_DATA,
     payload: data
   };
 };
